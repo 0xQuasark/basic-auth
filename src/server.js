@@ -13,6 +13,8 @@ app.use(cors());
 app.use(express.json()); // json
 app.use(express.urlencoded({ extended: true })) ;// form data
 
+
+// shout out to Chester for the error handling!
 app.use(methodValidator);
 app.use(pathValidator);
 
